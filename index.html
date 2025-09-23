@@ -1,5 +1,27 @@
-const moodEntry = {
-    timestamp: new Date(),
-    energy: 3,
-    emotions: ["happy", "excited", "tired"]
-};
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0" />
+        <title>Mood Tracker</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <h1>Mood Tracker</h1>
+            <div id = "energy-levels">
+                <label for="energy">Choose Your Energy Level: </label>
+                <input type="range" id="energy" name="energy" min="1" max="5" value="3" />
+                <div id="energy-level-display">Energy Level: 3/5</div>
+            </div>
+            <div id = "mood-buttons">
+                <button class="mood-button" data-mood="angry">Angry 😠</button>
+                <button class="mood-button" data-mood="sad">Sad ☹️</button>
+                <button class="mood-button" data-mood="neutral">Neutral 😐</button>
+                <button class="mood-button" data-mood="happy">Happy ☺️</button>
+                <button class="mood-button" data-mood="excited">Excited 🤩</button>
+            </div>
+        </div>
+    </body>
+</html>
