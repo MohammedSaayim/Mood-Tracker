@@ -55,3 +55,7 @@ input[type="range"] {
 .hidden {
     display: none;
 }
+
+.hidden.visible {
+    display: block;
+}
