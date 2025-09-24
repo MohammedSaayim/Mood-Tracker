@@ -21,6 +21,23 @@
                 <button class="mood-button" data-mood="neutral">Neutral 😐</button>
                 <button class="mood-button" data-mood="happy">Happy ☺️</button>
                 <button class="mood-button" data-mood="excited">Excited 🤩</button>
+                <button class="mood-button expand-button">Show more...</button>
+                <div class="hidden" id="more-moods">
+                    <form>
+                        <label for="search-mood">Search for a Mood:</label>
+                        <input type="search" id="search-mood" name="search-mood" placeholder="Type to search..."/>
+                    </form>
+                    <button class="mood-button" data-mood="anxious">Anxious 😰</button>
+                    <button class="mood-button" data-mood="confused">Confused 😕</button>
+                    <button class="mood-button" data-mood="bored">Bored 😫</button>
+                    <button class="mood-button" data-mood="grateful">Grateful 🙏</button>
+                    <button class="mood-button" data-mood="lonely">Lonely 🥲</button>
+                    <button class="mood-button" data-mood="proud">Proud 😁</button>
+                    <button class="mood-button" data-mood="relaxed">Relaxed 😌</button>
+                    <button class="mood-button" data-mood="stressed">Stressed 😖</button>
+                    <button class="mood-button collapse-button">Show less...</button>
+                    <div id="search-results"></div>
+                </div>
             </div>
         </div>
     </body>
